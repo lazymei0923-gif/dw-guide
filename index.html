@@ -350,6 +350,7 @@
       <h3>⚠ 它真的很吃用量，先看完這幾點</h3>
       <ul>
         <li><b>會用掉比一般對話多很多的 token</b>，而且照常算進你方案的用量和速率限制。跑一個大的，很可能一次吃光 5 小時額度。</li>
+        <li><b>不過額度比以前鬆：</b>自 2026/5/6 起 Claude Code 的 5 小時上限已<b>永久加倍</b>，且 Pro／Max <b>取消了尖峰時段的用量限制</b>（Anthropic 靠 SpaceX 算力擴充）——比過去更燒得起，但仍建議從小任務試起。</li>
         <li><b>先用小任務試。</b>從 /deep-research 丟一個你本來就想查的問題開始，別一開始就跑整套企劃。</li>
         <li><b>可指定較小的模型。</b>描述任務時，請 Claude 對不需要最強模型的階段改用小模型；大任務前先用 /model 確認。</li>
         <li><b>隨時可停。</b>在 /workflows 視圖裡可以停掉執行中的工作流程，已完成的部分不會白做。</li>
@@ -366,7 +367,7 @@
 
     <div class="faq-item"><div class="faq-q">要哪種方案才能用？我的方案可以嗎？<span class="faq-icon">+</span></div><div class="faq-a">不用挑。<b>所有付費方案都能用</b>，差別只在開啟方式：Max／Team 是預設開好的，最省事；Pro 方案要自己到 <b>/config</b> 把「Dynamic workflows」那一列打開；Enterprise 則要管理員開。另外先把 Claude Code 更新到 <b>v2.1.154 以上</b>，舊版本根本看不到這個功能。</div></div>
 
-    <div class="faq-item"><div class="faq-q">我在 claude.ai 對話框或 Cowork 裡也能用嗎？<span class="faq-icon">+</span></div><div class="faq-a">不行。動態工作流程是 <b>Claude Code 專屬</b>（CLI、桌面版、VS Code 擴充）。claude.ai 對話和 Cowork 這次拿到的是另一個新功能<b>「effort 控制」</b>——讓你調整 Claude 對每個回應投入多少思考力，跟動態工作流程是兩回事。想用工作流程，就要在 Claude Code 裡。</div></div>
+    <div class="faq-item"><div class="faq-q">我在 claude.ai 對話框或 Cowork 裡也能用嗎？<span class="faq-icon">+</span></div><div class="faq-a">不行。動態工作流程是 <b>Claude Code 專屬</b>（CLI、桌面版、VS Code 擴充）。claude.ai 對話和 Cowork 這次拿到的是另一個新功能<b>「effort 控制」</b>——讓你調整 Claude 對每個回應投入多少思考力，跟動態工作流程是兩回事。想用工作流程，就要在 Claude Code 裡。<br><br><b>限時加碼：</b>Cowork 目前有限時優惠，<b>2026/6/5–7/5</b> 五小時用量加倍、符合資格自動套用（Pro／Max／Team 適用，免費版除外）。</div></div>
 
     <div class="faq-item"><div class="faq-q">它跟我平常用 Claude Code 有什麼不同？<span class="faq-icon">+</span></div><div class="faq-a">平常是「一個 Claude 一輪一輪做」，工作流程是「它自己拆任務、同時派出一群 AI 分頭做、還互相挑錯」。<b>差別在規模和驗證</b>——適合大任務（整套企劃、大量檔案、需要交叉確認的工作），不是拿來回個訊息、改一行字用的。</div></div>
 
